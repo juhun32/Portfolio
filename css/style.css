@@ -40,16 +40,7 @@ body {
 }
 
 .intro {
-  font-size: var(--fs-h3);
   text-align: center;
-  margin: 0 auto;
-  padding: 1em;
-  padding-top: 3em;
-  max-width: 800px;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 3em;
 }
 
 .intro_img {
@@ -64,5 +55,20 @@ body {
 }
 
 #name {
-    font-size: var(--fs-h1);
+  font-size: var(--fs-h1);
+}
+
+@media (min-width: 800px) {
+  .intro {
+    font-size: var(--fs-h3);
+    text-align: center;
+    margin: 0 auto;
+    padding: 1em;
+    padding-top: 3em;
+    max-width: 800px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+  }
 }
