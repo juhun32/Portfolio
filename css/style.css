@@ -40,14 +40,38 @@ body {
 }
 
 .intro {
+  width: 90%;
+  display: flex;
   text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+  padding-top: 3em;
+  /* flex-direction: column; */
+}
+
+.intro_left {
+  flex: 1;
+  overflow: hidden;
 }
 
 .intro_img {
-  width: 100%;
-  border-radius: 140px;
+  width: 90%;
+  border-radius: 200px;
   margin-left: 10%;
   margin-right: 50%;
+  margin-top: 10%;
+  padding: 1em;
+  border: 10px solid black;
+  object-fit: cover;
+}
+
+.intro_right {
+  flex: 2;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title {
@@ -60,15 +84,77 @@ body {
 
 @media (min-width: 800px) {
   .intro {
+    flex-direction: column;
+  }
+
+  .intro_img {
+    min-width: 400px;
+  }
+
+  .intro_left {
+    height: 300px;
+  }
+
+  .intro_right {
+    padding: 2em;
+  }
+
+  .title {
     font-size: var(--fs-h3);
     text-align: center;
-    margin: 0 auto;
-    padding: 1em;
-    padding-top: 3em;
-    max-width: 800px;
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3em;
   }
 }
+
+.intro {
+    position: relative;
+  }
+  
+  .intro__img {
+    box-shadow: var(--bs);
+    border-radius: 10px;
+    margin-top: -0.7em;
+  }
+  
+  .section__subtitle--intro {
+    /* display: inline-block; */
+    text-align: center;
+  }
+  
+  @media (min-width: 600px) {
+    .intro {
+      display: grid;
+      width: min-content;
+      margin: 0 auto;
+      grid-template-columns: 1em;
+      grid-template-areas:
+        "img title"
+        "img subtitle";
+      grid-template-columns: min-content max-content;
+    }
+  
+    .intro__img {
+      grid-area: img;
+      min-width: 250px;
+      position: relative;
+      z-index: 2;
+      border-radius: 10px;
+      margin-top: 0.3em;
+    }
+  
+    .section__title {
+      margin-bottom: 0.1em;
+      margin-left: 0.5em;
+      margin-right: 0.25em;
+    }
+  
+    .section__subtitle--intro {
+      align-self: start;
+      grid-column: -1 / 1;
+      grid-row: 2;
+  
+      text-align: right;
+      position: relative;
+      left: -1em;
+      width: calc(100% + 1.5em);
+    }
+  }
