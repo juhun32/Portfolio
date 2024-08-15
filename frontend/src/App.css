@@ -1,15 +1,126 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: black;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "Montserrat", monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #d1d1d1;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.2rem;
+  --fs-h3: 1.2rem;
+  --fs-body: 1rem;
 }
 
-.about {
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.5rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+  }
+}
+
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* intro */
+
+.intro {
   text-align: center;
-  background-color: beige;
+  padding: 10em;
+  position: relative;
+}
+
+.intro__img {
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  border-radius: 200px;
+  margin-top: -0.5em;
+  width: 50%;
+}
+
+.section__title--intro {
+  font-weight: var(--fw-reg);
+  font-size: var(--fs-h1);
+}
+
+.section__title--intro strong {
+  display: block;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+  font-weight: 500;
+}
+
+.section__subtitle--intro {
+  background: var(--clr-accent);
+  padding: 0.25em 2em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+  border-radius: 200px;
+}
+
+@media (min-width: 800px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-template-columns: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 300px;
+    position: relative;
+    z-index: 2;
+    border-radius: 200px;
+    margin-top: 1em;
+  }
+
+  .section__title {
+    margin-bottom: 0.1em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .section__subtitle--intro {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: 5em;
+    width: calc(100% - 5em);
+  }
 }
 
 .projects {

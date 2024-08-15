@@ -12,18 +12,14 @@ function App() {
 
   return (
     <div className="App">
-      <section class="about">
-        <div class="about__title">
-          <h2>About Me</h2>
-        </div>
-        <div class="about__subtitle">
-          <p>
-            Hello! I'm a passionate web developer with experience in creating
-            dynamic and responsive websites. I specialize in both front-end and
-            back-end development, using modern technologies to build web
-            applications that solve real-world problems.
-          </p>
-        </div>
+      <section class="intro">
+        <h1 class="section__title section__title--intro">
+          Hi, I am <strong>Juhun Park</strong>
+        </h1>
+        {/* <p class="section__subtitle section__subtitle--intro">
+          Hello! My name is Juhun Park.
+        </p> */}
+        <img src={require("./img/intro2.jpg")} alt="a picture of yourself" class="intro__img" />
       </section>
 
       <section class="projects">
