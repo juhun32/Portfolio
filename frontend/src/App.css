@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.about {
+  text-align: center;
+  background-color: beige;
+}
+
+.projects {
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.contact {
+  text-align: center;
+  background-color: coral;
+}
