@@ -19,7 +19,30 @@ function App() {
         {/* <p class="section__subtitle section__subtitle--intro">
           Hello! My name is Juhun Park.
         </p> */}
-        <img src={require("./img/intro2.jpg")} alt="a picture of yourself" class="intro__img" />
+        <img
+          src={require("./img/intro2.jpg")}
+          alt="a picture of yourself"
+          class="intro__img"
+        />
+      </section>
+
+      <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me via the following channels:</p>
+        <ul>
+          <p>
+            Email:{" "}
+            <a href="mailto:your.email@example.com">your.email@example.com</a>
+            LinkedIn:{" "}
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">
+              Your LinkedIn
+            </a>
+            GitHub:{" "}
+            <a href="https://github.com/yourusername" target="_blank">
+              Your GitHub
+            </a>
+          </p>
+        </ul>
       </section>
 
       <section class="projects">
@@ -44,29 +67,6 @@ function App() {
             View Project
           </a>
         </div>
-      </section>
-
-      <section class="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via the following channels:</p>
-        <ul>
-          <li>
-            Email:{" "}
-            <a href="mailto:your.email@example.com">your.email@example.com</a>
-          </li>
-          <li>
-            LinkedIn:{" "}
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">
-              Your LinkedIn
-            </a>
-          </li>
-          <li>
-            GitHub:{" "}
-            <a href="https://github.com/yourusername" target="_blank">
-              Your GitHub
-            </a>
-          </li>
-        </ul>
       </section>
     </div>
   );
