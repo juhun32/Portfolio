@@ -68,6 +68,7 @@ function App() {
 
       <section class="projects" id="projects">
         <h2 className="project__title">Projects</h2>
+        <div className="project__div"></div>
         <div class="project">
           <h3>Project 1</h3>
           <p>
