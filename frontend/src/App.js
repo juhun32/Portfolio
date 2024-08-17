@@ -16,37 +16,58 @@ function App() {
         <h1 class="section__title section__title--intro">
           Hi, I am <strong>Juhun Park</strong>
         </h1>
-        {/* <p class="section__subtitle section__subtitle--intro">
-          Hello! My name is Juhun Park.
-        </p> */}
         <img
+          className="intro__img"
           src={require("./img/intro2.jpg")}
           alt="a picture of yourself"
           class="intro__img"
         />
       </section>
 
+      <div className="intro__div"></div>
+      {/* <p className="intro__div--subtitle">Hi! My name is Juhun Park.</p> */}
+
       <section class="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me via the following channels:</p>
-        <ul>
-          <p>
-            Email:{" "}
-            <a href="mailto:your.email@example.com">your.email@example.com</a>
-            LinkedIn:{" "}
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">
-              Your LinkedIn
+        <h3 className="contact__title">My Contacts :</h3>
+        <ul class="contact__links">
+          <li class="contact__link">
+            <a href="mailto:juhunpark32@email.com">
+              <img
+                class="contact__img"
+                src={require("./img/email.png")}
+                alt="email"
+              />
             </a>
-            GitHub:{" "}
-            <a href="https://github.com/yourusername" target="_blank">
-              Your GitHub
+          </li>
+          <li class="contact__link">
+            <a href="https://linkedin.com/in/juhun-park">
+              <img
+                class="contact__img"
+                src={require("./img/linkedin.png")}
+                alt="linkedin"
+              />
             </a>
-          </p>
+          </li>
+          <li class="contact__link">
+            <a href="https://github.com/juhun32">
+              <img
+                class="contact__img"
+                src={require("./img/github.png")}
+                alt="github"
+              />
+            </a>
+          </li>
         </ul>
       </section>
 
-      <section class="projects">
-        <h2>Projects</h2>
+      <div className="contact__div">
+        <a href="#projects" class="btn">
+          Projects
+        </a>
+      </div>
+
+      <section class="projects" id="projects">
+        <h2 className="project__title">Projects</h2>
         <div class="project">
           <h3>Project 1</h3>
           <p>
