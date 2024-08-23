@@ -61,13 +61,28 @@ function App() {
       </section>
 
       <div className="contact__div">
-        <a href="#projects" class="btn">
+        
+        <ul class="dir_btns">
+          <li class="dir_btn">
+          <a href="#projects" class="btn">
           Projects
         </a>
+          </li>
+          <li class="dir_btn">
+          <a href="#projects" class="btn">
+          Projects
+        </a>
+          </li>
+          <li class="dir_btn">
+          <a href="#projects" class="btn">
+          Projects
+        </a>
+          </li>
+        </ul>
       </div>
 
       <section class="projects" id="projects">
-        <h2 className="project__title">Projects</h2>
+        <p className="project__title">Projects</p>
         <div className="project__div"></div>
         <div class="project">
           <h3>Project 1</h3>

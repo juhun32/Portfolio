@@ -21,8 +21,8 @@
 @media (min-width: 700px) {
   :root {
     --fs-h1: 4.5rem;
-    --fs-h2: 2rem;
-    --fs-h3: 1.2rem;
+    --fs-h2: 3rem;
+    --fs-h3: 1.5rem;
     --fs-body: 1rem;
   }
 }
@@ -71,7 +71,7 @@ img {
 .intro {
   text-align: center;
   padding: 3em;
-  padding-top: 10em;
+  padding-top: 5em;
   padding-bottom: 10em;
   position: relative;
 }
@@ -102,8 +102,8 @@ img {
     display: grid;
     width: min-content;
     margin: 0 auto;
-    padding: 3em;
-    padding-top: 5em;
+    padding: 2em;
+    padding-top: 10em;
     grid-template-areas:
       "img title"
       "img subtitle";
@@ -112,8 +112,8 @@ img {
 
   .intro__img {
     grid-area: img;
-    max-width: 250px;
-    min-width: 320px;
+    max-width: 350px;
+    /* min-width: 320px; */
     position: relative;
     z-index: 2;
     border-radius: 200px;
@@ -132,6 +132,7 @@ img {
   margin: auto;
   width: 50%;
   border-radius: 20px;
+  margin-top: 2em;
 }
 
 /* .intro__div--subtitle {
@@ -187,11 +188,28 @@ img {
 }
 
 .contact__div {
-  height: 200px;
+  /* height: 200px; */
+  padding: 5em;
   background-color: var(--clr-light);
   position: relative;
   text-align: center;
-  margin-top: 5em;
+}
+
+.dir_btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+@media (min-width: 700px) {
+  .dir_btns {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
 
 .projects {
@@ -205,6 +223,7 @@ img {
   border-radius: 70% / 30%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+  box-shadow: inset 0px 10px 200px black;
 }
 
 .project__title {
@@ -227,6 +246,7 @@ img {
 
 @media (min-width: 700px) {
   .project__title {
-    font-size: var(--fs-h1);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-reg);
   }
 }
