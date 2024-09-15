@@ -61,22 +61,16 @@ function App() {
       </section>
 
       <div className="contact__div">
-        
         <ul class="dir_btns">
           <li class="dir_btn">
-          <a href="#projects" class="btn">
-          Projects
-        </a>
+            <a href="#experience" class="btn">
+              Experience
+            </a>
           </li>
           <li class="dir_btn">
-          <a href="#projects" class="btn">
-          Projects
-        </a>
-          </li>
-          <li class="dir_btn">
-          <a href="#projects" class="btn">
-          Projects
-        </a>
+            <a href="#projects" class="btn">
+              Projects
+            </a>
           </li>
         </ul>
       </div>
