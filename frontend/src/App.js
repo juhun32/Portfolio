@@ -1,66 +1,25 @@
 import React, { useEffect, useState } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Intro from "./components/Intro";
 import "./App.css";
 
 function App() {
   const [data, setData] = useState({});
 
   useEffect(() => {
-    fetch("/api/data")
-      .then((response) => response.json())
-      .then((data) => setData(data));
+    // fetch("/api/data")
+    //   .then((response) => response.json())
+    //   .then((data) => setData(data));
   }, []);
 
   return (
     <div className="App">
-      <section class="intro">
-        <h1 class="section__title section__title--intro">
-          Hi, I am <strong>Juhun Park</strong>
-        </h1>
-        <img
-          className="intro__img"
-          src={require("./img/intro2.jpg")}
-          alt="a picture of yourself"
-          class="intro__img"
-        />
-      </section>
+      <Header />
 
-      <div className="intro__div"></div>
-      {/* <p className="intro__div--subtitle">Hi! My name is Juhun Park.</p> */}
+      <Intro />
 
-      <section class="contact">
-        <h3 className="contact__title">My Contacts :</h3>
-        <ul class="contact__links">
-          <li class="contact__link">
-            <a href="mailto:juhunpark32@email.com">
-              <img
-                class="contact__img"
-                src={require("./img/email.png")}
-                alt="email"
-              />
-            </a>
-          </li>
-          <li class="contact__link">
-            <a href="https://linkedin.com/in/juhun-park">
-              <img
-                class="contact__img"
-                src={require("./img/linkedin.png")}
-                alt="linkedin"
-              />
-            </a>
-          </li>
-          <li class="contact__link">
-            <a href="https://github.com/juhun32">
-              <img
-                class="contact__img"
-                src={require("./img/github.png")}
-                alt="github"
-              />
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <div className="contact__div">
+      {/* <div className="contact__div">
         <ul class="dir_btns">
           <li class="dir_btn">
             <a href="#experience" class="btn">
@@ -73,7 +32,7 @@ function App() {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
 
       <section class="projects" id="projects">
         <p className="project__title">Projects</p>
@@ -99,6 +58,7 @@ function App() {
           </a>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
