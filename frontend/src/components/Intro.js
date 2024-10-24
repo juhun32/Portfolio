@@ -1,5 +1,8 @@
 import React from "react";
-import intro2 from "./img/intro2.jpg";
+import intro2 from "../img/intro2.jpg";
+import email from "../img/email.png";
+import linkedin from "../img/linkedin.png";
+import github from "../img/github.png";
 
 const Intro = () => {
   return (
@@ -26,7 +29,7 @@ const Intro = () => {
             <a href="mailto:juhunpark32@email.com">
               <img
                 class="contact__img"
-                src={require("./img/email.png")}
+                src={email}
                 alt="email"
               />
             </a>
@@ -35,7 +38,7 @@ const Intro = () => {
             <a href="https://linkedin.com/in/juhun-park">
               <img
                 class="contact__img"
-                src={require("./img/linkedin.png")}
+                src={linkedin}
                 alt="linkedin"
               />
             </a>
@@ -44,7 +47,7 @@ const Intro = () => {
             <a href="https://github.com/juhun32">
               <img
                 class="contact__img"
-                src={require("./img/github.png")}
+                src={github}
                 alt="github"
               />
             </a>
