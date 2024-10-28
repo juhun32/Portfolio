@@ -2,45 +2,28 @@ import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
+import About from "./components/About";
+import Skills from "./components/Skills";
 import "./App.css";
 
 function App() {
-  const [data, setData] = useState({});
-
-  useEffect(() => {
-    // fetch("/api/data")
-    //   .then((response) => response.json())
-    //   .then((data) => setData(data));
-  }, []);
-
   return (
     <div className="App">
       <Header />
 
       <Intro />
-      <section class="about" id="about">
-        <p className="about__title">About Me</p>
-        <div className="about__div"></div>
-        <p className="about__description">
-          A brief description about yourself. What are your skills? What are
-          you passionate about? What are you looking for?
-        </p>
-      </section>
-      <section class="skills" id="skills">
-        <p className="skills__title">Skills</p>
-        <div className="skills__div"></div>
-        <ul class="skills__list">
-          <li class="skills__list-item">Skill 1</li>
-          <li class="skills__list-item">Skill 2</li>
-          <li class="skills__list-item">Skill 3</li>
-          <li class="skills__list-item">Skill 4</li>
-        </ul>
-      </section>
+
+      <About />
+
+      <Skills />
+      
       <section class="experience" id="experience">
         <p className="experience__title">Experience</p>
         <div className="experience__div"></div>
-        <div class="experience
-        ">
+        <div
+          class="experience
+        "
+        >
           <h3>Company 1</h3>
           <p>Position</p>
           <p>Date</p>
@@ -80,19 +63,21 @@ function App() {
         <div className="contact__div"></div>
         <ul class="contact__links">
           <li class="contact__link">
-            <a href="mailto:
-            ">
+            <a
+              href="mailto:
+            "
+            >
               Email
             </a>
           </li>
           <li class="contact__link">
-            <a href="https://linkedin.com/in/juhun-park">
-              LinkedIn
-            </a>
+            <a href="https://linkedin.com/in/juhun-park">LinkedIn</a>
           </li>
           <li class="contact__link">
-            <a href="
-            ">
+            <a
+              href="
+            "
+            >
               Phone
             </a>
           </li>
@@ -105,7 +90,6 @@ function App() {
           View Resume
         </a>
       </section>
-      
 
       <section class="projects" id="projects">
         <p className="project__title">Projects</p>

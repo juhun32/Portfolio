@@ -1,9 +1,10 @@
 import React from 'react';
+import '../css/Footer.css';
 
 const Footer = () => {
     return (
         <footer>
-            <p>&copy; 2024 Prison Break. All rights reserved.</p>
+            <p>&copy; Juhun Park</p>
         </footer>
     );
 };

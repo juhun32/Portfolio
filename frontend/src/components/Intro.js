@@ -1,8 +1,6 @@
 import React from "react";
 import intro2 from "../img/intro2.jpg";
-import email from "../img/email.png";
-import linkedin from "../img/linkedin.png";
-import github from "../img/github.png";
+import "../css/Intro.css";
 
 const Intro = () => {
   return (
@@ -23,35 +21,9 @@ const Intro = () => {
       {/* <p className="intro__div--subtitle">Hi! My name is Juhun Park.</p> */}
 
       <section class="contact">
-        <h3 className="contact__title">My Contacts :</h3>
+        {/* <h3 className="contact__title">My Contacts :</h3> */}
         <ul class="contact__links">
-          <li class="contact__link">
-            <a href="mailto:juhunpark32@email.com">
-              <img
-                class="contact__img"
-                src={email}
-                alt="email"
-              />
-            </a>
-          </li>
-          <li class="contact__link">
-            <a href="https://linkedin.com/in/juhun-park">
-              <img
-                class="contact__img"
-                src={linkedin}
-                alt="linkedin"
-              />
-            </a>
-          </li>
-          <li class="contact__link">
-            <a href="https://github.com/juhun32">
-              <img
-                class="contact__img"
-                src={github}
-                alt="github"
-              />
-            </a>
-          </li>
+          
         </ul>
       </section>
     </div>
