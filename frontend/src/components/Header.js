@@ -11,7 +11,7 @@ const Header = () => {
       {/* <h1>My Simple Website</h1> */}
       <nav>
         <ul className="nav__title">
-            Juhun Park
+            {">>> "} {" "} Juhun Park
         </ul>
         <ul>
           <li class="contact__link">

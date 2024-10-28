@@ -3,13 +3,15 @@ import React from "react";
 const Skills = () => {
   return (
     <section class="skills" id="skills">
-      <p className="skills__title">Skills</p>
-      <div className="skills__div"></div>
+      <h2 className="skills__title">Skills</h2>
       <ul class="skills__list">
-        <li class="skills__list-item">Skill 1</li>
-        <li class="skills__list-item">Skill 2</li>
-        <li class="skills__list-item">Skill 3</li>
-        <li class="skills__list-item">Skill 4</li>
+        <li class="skills__list-item">AI / ML, Data Science, Full-stack development</li>
+        <li class="skills__list-item">Programming Languages : Python, Java, SQL, HTML, CSS, JavaScript</li>
+        <li class="skills__list-item">Full-stack: Pandas, React, Flask, PostgreSQL</li>
+        {/* <li class="skills__list-item">TensorFlow, PyTorch</li> */}
+        <li class="skills__list-item">Data Visualization</li>
+        {/* <li class="skills__list-item">Cloud Computing</li> */}
+        <li class="skills__list-item">Git, Anaconda3, VS Code, LaTeX, Eclipse, MS Office</li>
       </ul>
     </section>
   );

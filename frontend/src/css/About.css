@@ -1,0 +1,11 @@
+h2 {
+  font-size: var(--fs-h2);
+}
+
+ul {
+  list-style-type: "> ";
+}
+
+.about__description {
+  font-size: var(--fs-body);
+}
