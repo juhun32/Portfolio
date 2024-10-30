@@ -17,6 +17,7 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 nav ul {
@@ -49,5 +50,47 @@ nav ul li a {
 
 .contact__img {
   max-width: 30px;
+  max-height: 30px;
+  width: auto;
   height: auto;
+}
+
+.button-container {
+  margin: 0 0 -10px 90px;
+}
+
+.header-button {
+  margin: 0 0;
+  background-color: transparent; /* Make button background transparent */
+  border: none; /* Remove border */
+  cursor: pointer;
+}
+
+/* Dark mode and inverted styles */
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.inverted {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.moon, .sun {
+  max-width: 30px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.sun {
+  display: none; /* Hide sun icon by default */
+}
+
+.dark-mode .sun {
+  display: block; /* Show sun icon in dark mode */
+}
+
+.dark-mode .moon {
+  display: none; /* Hide moon icon in dark mode */
 }

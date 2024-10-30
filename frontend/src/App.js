@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Education from "./components/Education";
+
 import "./App.css";
 
 function App() {
@@ -16,48 +20,11 @@ function App() {
       <About />
 
       <Skills />
-      
-      <section class="experience" id="experience">
-        <p className="experience__title">Experience</p>
-        <div className="experience__div"></div>
-        <div
-          class="experience
-        "
-        >
-          <h3>Company 1</h3>
-          <p>Position</p>
-          <p>Date</p>
-          <p>
-            A brief description of your role. What did you do? What did you
-            learn?
-          </p>
-        </div>
-        <div class="experience">
-          <h3>Company 2</h3>
-          <p>Position</p>
-          <p>Date</p>
-          <p>
-            A brief description of your role. What did you do? What did you
-            learn?
-          </p>
-        </div>
-      </section>
-      <section class="education" id="education">
-        <p className="education__title">Education</p>
-        <div className="education__div"></div>
-        <div class="education">
-          <h3>University 1</h3>
-          <p>Degree</p>
-          <p>Date</p>
-          <p>A brief description of your studies. What did you learn?</p>
-        </div>
-        <div class="education">
-          <h3>University 2</h3>
-          <p>Degree</p>
-          <p>Date</p>
-          <p>A brief description of your studies. What did you learn?</p>
-        </div>
-      </section>
+
+      <Experience />
+
+      <Education />
+
       <section class="contact" id="contact">
         <p className="contact__title">Contact Me</p>
         <div className="contact__div"></div>
@@ -115,7 +82,7 @@ function App() {
           </a>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
