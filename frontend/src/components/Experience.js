@@ -11,7 +11,8 @@ const experiences = [
         role: "Student",
         company: "CodePath Technical Interview Prep Course | TIP102; Intermediate Level",
         duration: "May 2024 – August 2024",
-        description: "Improved problem-solving skills and understanding of data structures and algorithms, including heaps, trees, linked lists, and hashmaps through practicing 60+ datastructure problems. Enhanced soft skills in communication and analytical thinking by collaborating with 5 team members from various cultural and programming backgrounds."
+        description: "Improved problem-solving skills and understanding of data structures and algorithms, including heaps, trees, linked lists, and hashmaps through practicing 60+ datastructure problems.",
+        description2: "Enhanced soft skills in communication and analytical thinking by collaborating with 5 team members from various cultural and programming backgrounds."
     },
     {
         role: "English Instructor",
@@ -52,6 +53,7 @@ const Experience = () => {
                         <p>{exp.duration}</p>
                         <p>
                             {">"} {exp.description}
+                            {">"} {exp.description2}
                         </p>
                     </div>
                 ))}
