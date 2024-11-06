@@ -127,15 +127,21 @@ nav ul li a {
 }
 
 /* Dark mode and inverted styles */
+.header-dark-mode {
+  .contact__img {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  color: white;
+}
 .dark-mode {
-  filter: invert(1) hue-rotate(100deg);
+  /* background-color: #000000;
+  color: white; */
+  color: white;
+  background-color: rgb(32, 32, 32);
 }
 
-.inverted {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-.moon, .sun {
+.moon,
+.sun {
   max-width: 30px;
   max-height: 30px;
   width: auto;
@@ -210,7 +216,6 @@ nav ul li a {
   box-shadow: black 0px 0px 30px;
   /* color: black; */
 }
-
 
 .btn {
   display: inline-block;
@@ -316,8 +321,4 @@ nav ul li a {
     font-size: var(--fs-h2);
     font-weight: var(--fw-reg);
   }
-}
-
-.dark-mode {
-  filter: invert(1) hue-rotate(180deg);
 }
