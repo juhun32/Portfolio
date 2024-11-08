@@ -20,12 +20,6 @@ const Intro = () => {
       <div className="intro__div"></div>
       {/* <p className="intro__div--subtitle">Hi! My name is Juhun Park.</p> */}
 
-      <section class="contact">
-        {/* <h3 className="contact__title">My Contacts :</h3> */}
-        <ul class="contact__links">
-          
-        </ul>
-      </section>
     </div>
   );
 };

@@ -51,10 +51,7 @@ p {
 }
 
 .button-container {
-  /* margin: 0 0 -10px 90px; */
   z-index: 0;
-  /* display: flex; */
-  /* justify-content: flex-end; */
   position: fixed;
   right: 50px;
   top: 17px;
@@ -131,13 +128,17 @@ nav ul li a {
   .contact__img {
     filter: invert(1) hue-rotate(180deg);
   }
+  .header-button {
+    filter: invert(1) hue-rotate(180deg);
+  }
   color: white;
 }
 .dark-mode {
-  /* background-color: #000000;
-  color: white; */
   color: white;
   background-color: rgb(32, 32, 32);
+  .intro__div {
+    filter: invert(1) hue-rotate(180deg);
+  }
 }
 
 .moon,
@@ -150,119 +151,15 @@ nav ul li a {
 }
 
 .sun {
-  display: none; /* Hide sun icon by default */
+  display: none;
 }
 
-.dark-mode .sun {
-  display: block; /* Show sun icon in dark mode */
-}
-
-.dark-mode .moon {
-  display: none; /* Hide moon icon in dark mode */
-}
-
-/* intro */
-
-.intro {
-  text-align: center;
-  position: relative;
-  display: grid;
-  width: min-content;
-  margin: 0 auto;
-  padding: 2em;
-  padding-top: 15em;
-  grid-template-areas:
-    "img title"
-    "img subtitle";
-  grid-template-columns: min-content max-content;
-}
-
-.intro__img {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px 0px;
+.header-dark-mode .sun {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  grid-area: img;
-  max-width: 350px;
-  position: relative;
-  z-index: 2;
-  border-radius: 200px;
-  margin-top: 1em;
 }
 
-.section__title {
-  margin-left: 1.5em;
-}
-
-.section__title--intro {
-  font-weight: var(--fw-thin);
-  font-size: var(--fs-h1);
-}
-
-.section__title--intro strong {
-  display: block;
-  font-weight: var(--fw-bold);
-}
-
-.intro__div {
-  width: 700px;
-  height: 2px;
-  background-color: var(--clr-dark);
-  margin: auto;
-  width: 50%;
-  border-radius: 20px;
-  margin-top: 5em;
-  background-color: transparent;
-  box-shadow: black 0px 0px 30px;
-  /* color: black; */
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5em 2.5em;
-  background: var(--clr-light);
-  color: var(--clr-dark);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-  transition: transform 200ms ease-in-out;
-  border: solid var(--clr-dark);
-  border-radius: 10px;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-/* contact */
-
-.contact {
-  font-size: var(--fs-h3);
-  text-align: center;
-  background-color: var(--clr-light);
-  padding: 2em 2em;
-}
-
-.contact__title {
-  font-weight: var(--fw-reg);
-}
-
-@media (min-width: 700px) {
-  .contact__links {
-    margin-left: 30%;
-    margin-right: 30%;
-  }
-}
-
-.contact__div {
-  /* height: 200px; */
-  padding: 5em;
-  background-color: var(--clr-light);
-  position: relative;
-  text-align: center;
+.header-dark-mode .moon {
+  display: none;
 }
 
 .dir_btns {
@@ -296,6 +193,7 @@ nav ul li a {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   box-shadow: inset 0px 10px 200px black;
+  margin: 10em 0 0 0;
 }
 
 .project__title {
@@ -304,11 +202,17 @@ nav ul li a {
 
 .project__div {
   width: 700px;
-  height: 5px;
-  background-color: var(--clr-light);
+  height: 2px;
+  background-color: var(--clr-dark);
   margin: auto;
-  width: 50%;
   border-radius: 20px;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  background-color: transparent;
+  box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 1px,
+    rgba(255, 255, 255, 0.07) 0px 2px 2px, rgba(255, 255, 255, 0.07) 0px 4px 4px,
+    rgba(255, 255, 255, 0.07) 0px 10px 10px,
+    rgba(255, 255, 255, 0.07) 0px 16px 16px;
 }
 
 .project {
@@ -321,4 +225,36 @@ nav ul li a {
     font-size: var(--fs-h2);
     font-weight: var(--fw-reg);
   }
+}
+
+.slider-container {
+  margin-top: 200px;
+  width: 100%;
+}
+
+.page-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-button:hover {
+  background-color: #424242;
 }
