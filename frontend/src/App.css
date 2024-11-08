@@ -189,15 +189,17 @@ nav ul li a {
   background-blend-mode: multiply;
   background-attachment: fixed;
   color: var(--clr-light);
-  border-radius: 70% / 30%;
+  border-radius: 90% / 30%;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  box-shadow: inset 0px 10px 200px black;
+  box-shadow: inset 0px 30px 100px rgb(24, 24, 24);
   margin: 10em 0 0 0;
 }
 
 .project__title {
   font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  margin: 2em 0;
 }
 
 .project__div {
@@ -218,13 +220,6 @@ nav ul li a {
 .project {
   padding: 2em;
   font-weight: var(--fw-thin);
-}
-
-@media (min-width: 700px) {
-  .project__title {
-    font-size: var(--fs-h2);
-    font-weight: var(--fw-reg);
-  }
 }
 
 .slider-container {
@@ -257,4 +252,13 @@ nav ul li a {
 
 .slider-button:hover {
   background-color: #424242;
+}
+
+.pdf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 2em;
 }

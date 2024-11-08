@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import email from "./img/email.png";
 import linkedin from "./img/linkedin.png";
 import github from "./img/github.png";
-import resume from "./img/resume.png";
+// import resume from "./img/resume.png";
 import moon from "./img/moon.png";
 import sun from "./img/sun.png";
-import intro2 from "./img/intro2.jpg";
+import resume from "./resume.pdf";
 
 // import Footer from "./components/Footer";
 import Intro from "./components/Intro";
@@ -104,7 +104,18 @@ function Page1() {
 }
 
 function Page2() {
-  return <div className="page">This is Page 2</div>;
+  return (
+    <div className="pdf">
+      <embed
+        // src="https://drive.google.com/file/d/1GOL3TfRUiBxAQegLr2nGjRZiHB1W6D2X/view?usp=sharing"
+        src={resume}
+        title="PDF Viewer"
+        width="900"
+        height="1200"
+        style={{ border: 'none' }}
+      ></embed>
+    </div>
+  );
 }
 
 export default App;
