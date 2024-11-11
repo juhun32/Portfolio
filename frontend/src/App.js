@@ -88,13 +88,13 @@ function App() {
 function Page1() {
   return (
     <div className="page">
-      <About />
+      {/* <About /> */}
 
-      <Skills />
+      {/* <Skills /> */}
 
       <Experience />
 
-      <Education />
+      {/* <Education /> */}
 
       <div className="intro__div"></div>
 
@@ -107,12 +107,11 @@ function Page2() {
   return (
     <div className="pdf">
       <embed
-        // src="https://drive.google.com/file/d/1GOL3TfRUiBxAQegLr2nGjRZiHB1W6D2X/view?usp=sharing"
         src={resume}
         title="PDF Viewer"
         width="900"
         height="1200"
-        style={{ border: 'none' }}
+        style={{ border: "none" }}
       ></embed>
     </div>
   );

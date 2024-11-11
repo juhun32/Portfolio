@@ -14,7 +14,7 @@
 
   --fs-h1: 3rem;
   --fs-h2: 2rem;
-  --fs-h3: 1.5rem;
+  --fs-h3: 1.2rem;
   --fs-body: 1rem;
 }
 
@@ -22,7 +22,7 @@
   :root {
     --fs-h1: 4.5rem;
     --fs-h2: 3rem;
-    --fs-h3: 1.5rem;
+    --fs-h3: 1.2rem;
     --fs-body: 1rem;
   }
 }
@@ -34,6 +34,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
+  letter-spacing: .1em;
 }
 
 section {
@@ -44,6 +45,22 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: var(--fw-bold);
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: var(--fw-reg);
+  margin-left: 1em;
 }
 
 p {
@@ -179,6 +196,13 @@ nav ul li a {
     margin-left: 35%;
     margin-right: 35%;
   }
+}
+
+.experience-item {
+  padding: 0 0 2em 2em;
+display: grid;
+grid-template-columns: 1fr 2fr;
+gap: 2em;
 }
 
 .projects {
