@@ -33,8 +33,7 @@ body {
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  line-height: 1.6;
-  letter-spacing: .1em;
+  letter-spacing: 0.12em;
 }
 
 section {
@@ -198,12 +197,23 @@ nav ul li a {
   }
 }
 
-.experience-item {
-  padding: 0 0 2em 2em;
-display: grid;
-grid-template-columns: 1fr 2fr;
-gap: 2em;
+.experience-content {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Image takes 1/3 and text 2/3 */
+  gap: 20px; /* Adds space between the columns */
+  justify-items: center;
 }
+
+.experience-image img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 90px; /* Optional: limits the max size of the image */
+  height: auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
 
 .projects {
   text-align: center;

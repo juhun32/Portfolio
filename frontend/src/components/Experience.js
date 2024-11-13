@@ -1,7 +1,13 @@
 import React from "react";
+import gimpo from "../img/gimpo.jpg";
+import gmu from "../img/gmu.png";
+import codepath from "../img/codepath.png";
+import himedia from "../img/himedia.png";
+import english from "../img/english.png";
 
 const experiences = [
   {
+    image: gmu,
     role: "Participant",
     company: "PatriotHacks 2024",
     duration: "October 2024",
@@ -9,6 +15,7 @@ const experiences = [
       "Participated in a 36-hour hackathon event, collaborated with 3 team members to develop a React web application that provides information about government spending of tax revenue on incarceration, and solutions to reduce spending.",
   },
   {
+    image: codepath,
     role: "Student",
     company:
       "CodePath Technical Interview Prep Course (TIP102 Intermediate Level)",
@@ -19,8 +26,9 @@ const experiences = [
       "Enhanced soft skills in communication and analytical thinking by collaborating with 5 team members from various cultural and programming backgrounds.",
   },
   {
+    image: english,
     role: "English Instructor",
-    company: "21Cen. English / Math Academy, Incheon, South Korea",
+    company: "21Cen. English Academy",
     duration: "July 2024 – August 2024",
     description:
       "Provided one-on-one tutoring sessions to 14 high school students, helped students improve their grades by 30% and understanding of English concepts and structures.",
@@ -28,8 +36,9 @@ const experiences = [
       "Developed customized 10 lesson plans by addressing the specific needs and learning objectives of 14 individual students, resulting in total of 20% time saved each tutoring sessions.",
   },
   {
+    image: himedia,
     role: "Student",
-    company: "Himedia Academy Backend Developer Course",
+    company: "Himedia Academy Backend Developer Apprenticeship Program",
     duration: "January 2023 – April 2023",
     description:
       "Backend development training course consisted of 10 participants, focused learning of Java development and practical workspace training based on 8-hours per session curriculum.",
@@ -39,6 +48,7 @@ const experiences = [
       "Managed team projects by utilizing Git and Notion to enhance collaboration and track progress, resulting in improved workflow efficiency and successful project completion.",
   },
   {
+    image: gimpo,
     role: "Club President",
     company: "Software Developer Student Club of Gimpo Highschool",
     duration: "August 2020 – March 2022",
@@ -50,6 +60,7 @@ const experiences = [
       "Invited a published author in artificial intelligence for a Q&A session with club members, facilitating an engaging discussion that deepened understanding of AI concepts and inspired a new group on AI advancements project.",
   },
   {
+    image: gimpo,
     role: "Student Researcher",
     company: "Motion Detection AI Research Program | Gimpo Highschool",
     duration: "March 2021 – November 2021",
@@ -67,12 +78,12 @@ const Experience = () => {
       <div className="experience-list">
         {experiences.map((exp, index) => (
           <div key={index} className="experience-item">
-            <h2>{exp.company}</h2>
+            {/* <h2>{exp.company}</h2>
             <h3>{exp.role}</h3>
-            <h3>{exp.duration}</h3>
+            <h3>{exp.duration}</h3> */}
             <div className="experience-content">
               <div className="experience-image">
-                <img src={`path/to/image/${index}.jpg`} alt={`${exp.company} logo`} />
+                <img src={exp.image} alt={`${exp.company} logo`} />
               </div>
               <div className="experience-details">
                 <h2>{exp.company}</h2>
