@@ -1,11 +1,12 @@
 import React from "react";
+import "../css/Projects.css";
 
 function Projects() {
   return (
-    <section class="projects" id="projects">
+    <section className="projects" id="projects">
       <p className="project__title">Projects</p>
       <div className="project__div"></div>
-      <div class="project">
+      <div className="project">
         <h3>Project 1</h3>
         <p>
           A brief description of the project. What technology did you use? What
@@ -15,7 +16,7 @@ function Projects() {
           View Project
         </a>
       </div>
-      <div class="project">
+      <div className="project">
         <h3>Project 2</h3>
         <p>
           A brief description of the project. What technology did you use? What

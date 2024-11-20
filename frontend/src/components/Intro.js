@@ -5,8 +5,8 @@ import "../css/Intro.css";
 const Intro = () => {
   return (
     <div>
-      <section class="intro">
-        <h1 class="section__title section__title--intro">
+      <section className="intro">
+        <h1 className="section__title section__title--intro">
           Hi, I am <strong>Juhun Park</strong>
         </h1>
         <img

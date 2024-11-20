@@ -5,8 +5,19 @@ import gmu from "../img/gmu.png";
 import codepath from "../img/codepath.png";
 import himedia from "../img/himedia.png";
 import english from "../img/english.png";
+import "../css/Experience.css";
 
 const experiences = [
+  {
+    image: gmu,
+    role: "Volunteer",
+    company: "InsightLegi DataStorm 2024",
+    duration: "November 2024",
+    description:
+      "Managed logistics, participant data and provided technical support for participants and mentors for a 36-hour hackathon event.",
+    description2:
+      "Contributed to social media promotion and event planning, resulting in 1000+ views.",
+  },
   {
     image: gmu,
     role: "Participant",
@@ -38,8 +49,8 @@ const experiences = [
   },
   {
     image: himedia,
-    role: "Student",
-    company: "Himedia Academy Backend Developer Apprenticeship Program",
+    role: "Apprentice",
+    company: "Himedia Academy Backend Developer Apprenticeship",
     duration: "January 2023 – April 2023",
     description:
       "Backend development training course consisted of 10 participants, focused learning of Java development and practical workspace training based on 8-hours per session curriculum.",
@@ -51,7 +62,7 @@ const experiences = [
   {
     image: gimpo,
     role: "Club President",
-    company: "Software Developer Student Club of Gimpo Highschool",
+    company: "Software Developer Student Club",
     duration: "August 2020 – March 2022",
     description:
       "Managed 36 club members ensuring smooth progress of their personal projects while ensuring their academic success in highschool, received positive feedback from peers and club mentors.",
@@ -63,7 +74,7 @@ const experiences = [
   {
     image: gimpo,
     role: "Student Researcher",
-    company: "Motion Detection AI Research Program | Gimpo Highschool",
+    company: "Motion Detection AI Research Program",
     duration: "March 2021 – November 2021",
     description:
       "Developed and tested a Python AI powered motion detection program using MediaPipe model for a student research project.",
@@ -105,22 +116,29 @@ const Experience = () => {
               </div>
               <div className={showDetails ? "experience-details" : "hide"}>
                 <h2>{exp.company}</h2>
-                <h3>{exp.role}</h3>
-                <h3>{exp.duration}</h3>
-                <p>
-                  {">"} {exp.description}
-                </p>
-                {exp.description2 && (
-                  <p>
-                    {">"} {exp.description2}
-                  </p>
-                )}
-                {exp.description3 && (
-                  <p>
-                    {">"} {exp.description3}
-                  </p>
-                )}
+                <h3>
+                  <span>{exp.role}</span>
+                  <span>{exp.duration}</span>
+                </h3>
+                <ol>
+                  <li>
+                    {exp.description}
+                  </li>
+                  {exp.description2 && (
+                    <li>
+                      {exp.description2}
+                    </li>
+                  )}
+                  {exp.description3 && (
+                    <li>
+                      {exp.description3}
+                    </li>
+                  )}
+                </ol>
               </div>
+              <div
+                className={showDetails ? "hide-div" : "experience-div"}
+              ></div>
             </div>
           </div>
         ))}
