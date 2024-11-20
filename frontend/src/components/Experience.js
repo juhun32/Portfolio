@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import gimpo from "../img/gimpo.jpg";
 import gmu from "../img/gmu.png";
 import codepath from "../img/codepath.png";
@@ -72,20 +73,37 @@ const experiences = [
 ];
 
 const Experience = () => {
+  const [showDetails, setShowDetails] = useState(false);
+
+  const handleToggle = () => {
+    setShowDetails((prevState) => !prevState);
+  };
+
   return (
     <section id="experience">
-      <h1>Experience</h1>
+      <h1>Experience / Activity</h1>
       <div className="experience-list">
+        <label className="label">
+          <div className="toggle">
+            <input
+              className="toggle-state"
+              type="checkbox"
+              checked={showDetails}
+              onChange={handleToggle}
+            />
+            <div className="indicator"></div>
+          </div>
+          <div className="label-text">
+            {showDetails ? "Hide Details" : "Show Details"}
+          </div>
+        </label>
         {experiences.map((exp, index) => (
           <div key={index} className="experience-item">
-            {/* <h2>{exp.company}</h2>
-            <h3>{exp.role}</h3>
-            <h3>{exp.duration}</h3> */}
             <div className="experience-content">
               <div className="experience-image">
                 <img src={exp.image} alt={`${exp.company} logo`} />
               </div>
-              <div className="experience-details">
+              <div className={showDetails ? "experience-details" : "hide"}>
                 <h2>{exp.company}</h2>
                 <h3>{exp.role}</h3>
                 <h3>{exp.duration}</h3>
@@ -104,19 +122,6 @@ const Experience = () => {
                 )}
               </div>
             </div>
-            {/* <p>
-              {">"} {exp.description}
-            </p>
-            {exp.description2 && (
-              <p>
-                {">"} {exp.description2}
-              </p>
-            )}
-            {exp.description3 && (
-              <p>
-                {">"} {exp.description3}
-              </p>
-            )} */}
           </div>
         ))}
       </div>
