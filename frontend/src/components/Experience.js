@@ -92,8 +92,8 @@ const Experience = () => {
 
   return (
     <section id="experience">
-      <h1>Experience / Activity</h1>
-      <div className="experience-list">
+      <div className="experience-header">
+        <h1>{">"} Experience / Activity</h1>
         <label className="label">
           <div className="toggle">
             <input
@@ -104,10 +104,10 @@ const Experience = () => {
             />
             <div className="indicator"></div>
           </div>
-          <div className="label-text">
-            {showDetails ? "Hide Details" : "Show Details"}
-          </div>
+          {/* <div className="label-text">{showDetails ? "Show" : "Hide"}</div> */}
         </label>
+      </div>
+      <div className="experience-list">
         {experiences.map((exp, index) => (
           <div key={index} className="experience-item">
             <div className="experience-content">
@@ -121,19 +121,9 @@ const Experience = () => {
                   <span>{exp.duration}</span>
                 </h3>
                 <ol>
-                  <li>
-                    {exp.description}
-                  </li>
-                  {exp.description2 && (
-                    <li>
-                      {exp.description2}
-                    </li>
-                  )}
-                  {exp.description3 && (
-                    <li>
-                      {exp.description3}
-                    </li>
-                  )}
+                  <li>{exp.description}</li>
+                  {exp.description2 && <li>{exp.description2}</li>}
+                  {exp.description3 && <li>{exp.description3}</li>}
                 </ol>
               </div>
               <div
