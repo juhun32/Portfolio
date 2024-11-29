@@ -94,6 +94,7 @@ const Experience = () => {
     <section id="experience">
       <div className="experience-header">
         <h1>{">"} Experience / Activity</h1>
+        <div className="experience-header-div"></div>
         <label className="label">
           <div className="toggle">
             <input

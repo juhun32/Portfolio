@@ -13,6 +13,7 @@ import Intro from "./components/Intro";
 // import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 // import Education from "./components/Education";
+import Spotify from "./components/Spotify";
 
 import "./App.css";
 import Projects from "./components/Projects";
@@ -36,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <header className={isDarkMode ? "header-dark-mode" : ""}>
+      
         <nav>
           <ul className="nav__title">{">>>"} Juhun Park</ul>
           <ul>
@@ -66,6 +68,8 @@ function App() {
           </ul>
         </nav>
       </header>
+
+      <Spotify/>
 
       <div className={isDarkMode ? "dark-mode" : ""}>
         <Intro />

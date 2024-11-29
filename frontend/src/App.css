@@ -28,7 +28,7 @@
 }
 
 body {
-  background: var(--clr-light);
+  background: rgb(185, 179, 171);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
@@ -139,51 +139,23 @@ nav ul li a {
 
 .dark-mode {
   color: white;
-  background-color: rgb(50, 50, 50);
+  background-color: rgb(40, 40, 40);
+  
+  html {
+    background-color: rgb(40, 40, 40);
+    color: rgb(40, 40, 40);
+  }
   .intro__div {
     filter: invert(1) hue-rotate(180deg);
   }
-  .slider-div {
+  .slider-button {
+    background-color: #333333;
+    color: rgb(206, 206, 206);
     filter: invert(1) hue-rotate(180deg);
   }
-  .slider-button {
-    background-color: #777777;
-    color: rgb(0, 0, 0);
-  }
-  .label {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    color: #313131;
-  }
-  
-  .label-text {
-    margin-left: 16px;
-  }
-  
-  .toggle {
-    isolation: isolate;
-    position: relative;
-    height: 30px;
-    width: 60px;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: -8px -4px 8px 0px #363636, 8px 4px 12px 0px #1f1f1f,
-      4px 4px 4px 0px #000000 inset, -4px -4px 4px 0px #1b1b1b inset;
-  }
-  
-  .toggle-state {
-    display: none;
-  }
-  
-  .indicator {
-    height: 100%;
-    width: 200%;
-    background-color: rgb(50, 50, 50);
-    border-radius: 15px;
-    transform: translate3d(-75%, 0, 0);
-    /* transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35); */
-    box-shadow: -8px -4px 8px 0px #1b1b1b, 8px 4px 12px 0px #1f1f1f;
+  .slider-button:hover {
+    background: #7c7c7c;
+    color: rgb(206, 206, 206);
   }
 }
 
@@ -221,42 +193,39 @@ nav ul li a {
 .slider-button {
   align-items: center;
   appearance: none;
-  background-color: #fff;
-  border-radius: 24px;
+  background-color: #1d1d1d;
+  border-radius: 15px;
   border-style: none;
   box-shadow: rgba(50, 50, 50, 0.16) 0 3px 5px -1px,
     rgba(50, 50, 50, 0.14) 0 5px 15px 0, rgba(50, 50, 50, 0.12) 0 1px 20px 0;
   box-sizing: border-box;
-  color: #3c4043;
+  color: #cecece;
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
   font-size: 14px;
   font-weight: 500;
-  height: 48px;
+  height: 40px;
   justify-content: center;
-  letter-spacing: 0.25px;
-  line-height: normal;
   max-width: 100%;
   overflow: visible;
   padding: 2px 24px;
   position: relative;
   text-align: center;
   text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: auto;
+  width: 200px;
   will-change: transform, opacity;
   z-index: 0;
 }
 
 .slider-button:hover {
-  background: #f6f9fe;
-  color: #333333;
+  background: #4d4d4d;
+  color: #ffffff;
 }
+
 .slider-button:active {
   box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%),
     0 8px 12px 6px rgb(60 64 67 / 15%);
