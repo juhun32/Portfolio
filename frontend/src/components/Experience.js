@@ -319,7 +319,6 @@ const Experience = () => {
 
             <p>
               <br className="br-height"></br>
-              <br className="br-height"></br>
             </p>
 
             <div className="experience-detail">

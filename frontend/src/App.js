@@ -90,7 +90,7 @@ function Page1() {
   return (
     <div className="page">
       <Experience />
-      {/* <Projects /> */}
+      <Projects />
     </div>
   );
 }
