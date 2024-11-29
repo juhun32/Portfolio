@@ -90,7 +90,7 @@ function Page1() {
   return (
     <div className="page">
       <Experience />
-      <Projects />
+      {/* <Projects /> */}
     </div>
   );
 }
@@ -103,7 +103,7 @@ function Page2() {
         title="PDF Viewer"
         width="900"
         height="1200"
-        style={{ border: "none" }}
+        style={{ border: "none", borderRadius: "20px" }}
       ></embed>
     </div>
   );

@@ -33,7 +33,6 @@ body {
   margin: 0;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  letter-spacing: 0.12em;
 }
 
 img {
@@ -94,6 +93,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 55px;
 }
 
 nav ul {
@@ -104,7 +104,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 0 0 0 2em;
+  margin: 0 0 0 1.5em;
 }
 
 nav ul li a {
@@ -113,7 +113,7 @@ nav ul li a {
 }
 
 .nav__title {
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: 500;
   margin: 5px 15px 0 15px;
 }
@@ -140,29 +140,25 @@ nav ul li a {
 .dark-mode {
   color: white;
   background-color: rgb(40, 40, 40);
-  
-  html {
-    background-color: rgb(40, 40, 40);
-    color: rgb(40, 40, 40);
-  }
+
   .intro__div {
     filter: invert(1) hue-rotate(180deg);
   }
   .slider-button {
-    background-color: #333333;
-    color: rgb(206, 206, 206);
+    background-color: #181818;
+    color: rgb(252, 252, 252);
     filter: invert(1) hue-rotate(180deg);
   }
   .slider-button:hover {
-    background: #7c7c7c;
-    color: rgb(206, 206, 206);
+    background: #000000;
+    color: rgb(221, 221, 221);
   }
 }
 
 .moon,
 .sun {
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 25px;
+  max-height: 25px;
   width: auto;
   height: auto;
   display: block;
@@ -196,8 +192,8 @@ nav ul li a {
   background-color: #1d1d1d;
   border-radius: 15px;
   border-style: none;
-  box-shadow: rgba(50, 50, 50, 0.16) 0 3px 5px -1px,
-    rgba(50, 50, 50, 0.14) 0 5px 15px 0, rgba(50, 50, 50, 0.12) 0 1px 20px 0;
+  box-shadow: rgba(50, 50, 50, 0.2) 0 5px 5px -1px,
+    rgba(50, 50, 50, 0.2) 0 5px 15px 0, rgba(50, 50, 50, 0.2) 0 1px 20px 0;
   box-sizing: border-box;
   color: #cecece;
   cursor: pointer;

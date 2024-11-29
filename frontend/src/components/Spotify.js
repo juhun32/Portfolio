@@ -13,7 +13,7 @@ const Spotify = () => {
     <iframe
       style={iframeStyle}
       src="https://open.spotify.com/embed/track/31fMJwgrgNdk1IbWZEchX2?utm_source=generator"
-      width="300" // Adjust width as needed
+      width="280" // Adjust width as needed
       height="80" // Adjust height as needed
       frameBorder="0"
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
