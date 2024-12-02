@@ -226,7 +226,7 @@ const Experience = () => {
 
         <div className="vertical-line"></div>
 
-        <div className={showDetails ? "hide-div" : "experience-show"}>
+        <div className={showDetails ? "experience-show" : "hide-div"}>
           <div className="experience-content">
             <div className="experience-detail">
               <p className="event-title">InsightLegi DataStorm 2024</p>

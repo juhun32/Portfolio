@@ -75,7 +75,7 @@ function App() {
         <Intro />
         <div className="slider-div">
           <button className="slider-button" onClick={handleSlide}>
-            {activePage === "Page1" ? "View Resume" : "View Experience"}
+            {activePage === "Page1" ? "View Resume" : "View Portfolio"}
           </button>
         </div>
         <div className="page-display">
